@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
 body {
-  background: #f2f2f2;
+  background: rgb(241, 245, 247);
   color: #444;
   margin: 0;
 }
@@ -12,7 +12,7 @@ body * {
 /* header */
 header {
   text-align: center;
-  background: #e7e7e7;
+  background: #b6c1e4;
   padding-top: 20px;
   display: flex;
   justify-content: center;
@@ -27,6 +27,106 @@ header h1 {
   font-size: 2em;
   padding-top: 25px;
   margin-left: 15px;
-  color: #777;
+  color: #ddff44;
   transform: rotate(2deg);
+}
+
+/* task list */
+.task-list{
+  max-width: 640px; 
+  margin: 20px auto;
+}
+
+.task{
+  padding: 6px 20px;
+  background: rgb(247, 255, 184);
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task h3, .task .icons{
+  display: inline-block; 
+}
+
+.task .icons{
+  text-align: right;
+}
+
+.task i{
+  font-size: 1.4em;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #a19c9c;
+}
+
+.task i.active{
+  color: crimson;
+}
+
+/* filter nav */
+.filter{
+  width: 640px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+.filter button{
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  background: gold;
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* form */
+.new-task-form{
+  background: yellow;
+  padding: 20px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+form button{
+  background: crimson;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: black;
+  font-size: 1em;
+}
+
+.loading{
+  max-width: 600px;
+  border: 1px solid yellow;
+  background: white;
+  color: crimson;
+  padding: 5px 0;
+  text-align: center;
+  margin: 30px auto;
 }
